@@ -7,14 +7,14 @@ import 'package:wordle/wordle/data/words.dart';
 
 enum GameStatus { playing, submitting, lost, won }
 
-class WordleScreen extends StatefulWidget {
-  const WordleScreen({Key? key}) : super(key: key);
+class WordleView extends StatefulWidget {
+  const WordleView({Key? key}) : super(key: key);
 
   @override
-  _WordleScreenState createState() => _WordleScreenState();
+  _WordleViewState createState() => _WordleViewState();
 }
 
-class _WordleScreenState extends State<WordleScreen> {
+class _WordleViewState extends State<WordleView> {
   GameStatus _gameStatus = GameStatus.playing;
 
   final List<Word> _board = List.generate(

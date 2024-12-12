@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wordle/wordle/views/wordle_screen.dart';
+import 'package:wordle/wordle/views/wordle_view.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class App extends StatelessWidget {
       title: 'Flutter Wordle',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black),
-      home: const WordleScreen(),
+      home: const WordleView(),
     );
   }
 }

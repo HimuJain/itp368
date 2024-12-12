@@ -24,8 +24,10 @@ class Keyboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: _keyb.map(
         (keybRow) => Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: keybRow.map(
             (letter) {
               if (letter == 'DEL') {
